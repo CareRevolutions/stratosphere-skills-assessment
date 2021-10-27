@@ -1,0 +1,1 @@
+1. Create a model of your ideal CI/CD super for a toolset of your choosing (maven/gradle for java, Terraform, etc).
