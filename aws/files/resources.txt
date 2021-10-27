@@ -1,6 +1,6 @@
 *****Bucket*******
 arn:aws:s3:::stratosphere-test
-encryption: arn:aws:kms:us-east-1:670384443276:key/0b7c6dad-28c1-41e5-aa1e-755c8e03b265
+encryption: arn:aws:kms:us-east-1:123456789012:key/0b7c6dad-28c1-41e5-aa1e-755c8e03b265
 
 *****Bucket Policy*******
 {
@@ -11,7 +11,7 @@ encryption: arn:aws:kms:us-east-1:670384443276:key/0b7c6dad-28c1-41e5-aa1e-755c8
             "Sid": "Stmt1634665594314",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::670384443276:user/s3-test-user"
+                "AWS": "arn:aws:iam::123456789012:user/s3-test-user"
             },
             "Action": [
                 "s3:DeleteObject*",
@@ -28,7 +28,7 @@ encryption: arn:aws:kms:us-east-1:670384443276:key/0b7c6dad-28c1-41e5-aa1e-755c8
 }
 
 *****IAM User*******
-arn:aws:iam::670384443276:user/s3-test-user
+arn:aws:iam::123456789012:user/s3-test-user
 
 *****IAM User Policy*******
 {
