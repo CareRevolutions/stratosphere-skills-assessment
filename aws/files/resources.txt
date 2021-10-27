@@ -1,0 +1,52 @@
+*****Bucket*******
+arn:aws:s3:::stratosphere-test
+encryption: arn:aws:kms:us-east-1:670384443276:key/0b7c6dad-28c1-41e5-aa1e-755c8e03b265
+
+*****Bucket Policy*******
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1634665597575",
+    "Statement": [
+        {
+            "Sid": "Stmt1634665594314",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::670384443276:user/s3-test-user"
+            },
+            "Action": [
+                "s3:DeleteObject*",
+                "s3:GetObject*",
+                "s3:List*",
+                "s3:PutObject*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::stratosphere-test",
+                "arn:aws:s3:::stratosphere-test/*"
+            ]
+        }
+    ]
+}
+
+*****IAM User*******
+arn:aws:iam::670384443276:user/s3-test-user
+
+*****IAM User Policy*******
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject*",
+                "s3:List*",
+                "s3:DeleteObject*",
+                "s3:GetBucket*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::s3-test-bucket/*",
+                "arn:aws:s3:::s3-test-bucket"
+            ]
+        }
+    ]
+}
