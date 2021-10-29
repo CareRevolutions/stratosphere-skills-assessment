@@ -1,6 +1,6 @@
 # Welcome to the Stratosphere skills assessment!
 ___
-The purpose of this assessment is for applicants to showcase their skills.  You are not being graded, it's just a way for us to have a baseline of your skills for the interview.  
+The purpose of this assessment is for applicants to showcase their skills.  We use the results of the assessment to have a baseline of your skills for the interview.  
 
 ## Directions
 Pick 4 areas of expertise and answer the sets of questions.  Some sets of questions may have data files that contain valuable information needed to answer questions.
