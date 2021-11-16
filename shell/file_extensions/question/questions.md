@@ -1,0 +1,1 @@
+Write a shell (say which) one-liner that will scan the file system '/opt' and report the top 10 most frequent file extensions that are 3-5 letters long in descending order of frequency, along with their frequency.

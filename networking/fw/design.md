@@ -1,0 +1,1 @@
+For a simple LB, app, db stack design a network policy, ideally either AWS Security Group, or k8s NetworkPolicy (others are accepted).

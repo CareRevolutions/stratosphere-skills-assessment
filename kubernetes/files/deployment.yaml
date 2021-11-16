@@ -1,0 +1,26 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world
+  labels:
+    app: example
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: example
+  template:
+    metadata:
+      labels:
+        app: example
+    spec:
+      containers:
+        - name: container1
+          image: nginx
+          ports:
+            - containerPort: 80
+        - name: container2
+          image: hello-world/fake-image:1.0
+          ports:
+            - containerPort: 3000
